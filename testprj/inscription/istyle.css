@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url('images/pxfuel\ \(1\).jpg');
+    background-size: cover;
+    background-position: center;
+}
+#conteneur{
+    width: 750px;
+    background-color: rgba(255, 255, 255, .1);
+    border: 2px solid #f44336;
+    backdrop-filter: blur(5px);
+    color: white;
+    border-radius: 10px;
+    padding: 40px 35px 55px;
+    margin: 0 10px;
+}
+#conteneur h1{
+    color: #f44336;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+#conteneur .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.input-box .type-here{
+    position: relative;
+    width: 48%;
+    height: 50px;
+    margin: 13px 0;
+}
+.input-box .type-here input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid #f44336;
+    outline: none;
+    font-size: 1em;
+    color: white;
+    border-radius: 6px;
+    padding: 0px 0px 0px 40px;
+}
+.input-box .type-here input::placeholder{
+    color: rgb(250, 202, 184);
+}
+.input-box .type-here input:focus::placeholder{
+    opacity: 0;
+}
+.input-box .type-here i{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(250, 202, 184);
+}
+#conteneur .btn{
+    width: 100%;
+    height: 45px;
+    background: rgb(251, 191, 170);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+#conteneur .btn a{
+    text-decoration: none;
+    color: #333;
+}
+#conteneur .btn:hover{
+    box-shadow: 0 0 10px 0 #fd7268 ;
+    transform: scale(1.01);
+}
+#conteneur p{
+    margin-left: 300px;
+    width: 75px;
+    height: 20px;
+    border-radius: 4px;
+    font-size: 17px;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto;
+}
+#conteneur p a{
+    color: rgb(251, 191, 170);
+}
+@media (max-width:700px) {
+    .input-box .type-here{
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
